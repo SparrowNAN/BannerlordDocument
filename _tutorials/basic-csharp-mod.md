@@ -1,19 +1,22 @@
-# Basic C\# Mod
+# 基础 C\# Mod
 
-## Introduction
+## 简介
 
-The following guide will walk you through step-by-step on how to create a basic C\# mod. This mod will add a button to the singleplayer title screen called `Message`. When clicked, this button will output `Hello World` to chat.
+接下来会一步一步引导制作出一个基础的 C\# mod。 这个`Mod`将在单人游戏标题屏幕上添加一个名为“Messa ge”的按钮。单击后，此按钮将输出“Hello World”。 
 
-## Preparation
+## 准备
 
-#### For this tutorial, we will be naming our project `ExampleMod`.
+#### 针对这个教程我们将将要制作的`Mod`命名为 `ExampleMod`.
 
-### Setting up your Module \(SubModule.xml\)
+### 设置Module \(SubModule.xml\)
 
-1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `ExampleMod` (Must be the same as the Id you use for Step #4).
-3. Create a new folder named `bin` and inside this directory, create a new folder called `Win64_Shipping_Client`.
-4. Create a new `SubModule.xml` file (must be named this) inside the folder you created in Step #2 and then paste the following into it:
+1. 进入到游戏的 `Modules` 文件夹
+
+2. 创建一个文件夹并且命名为 `ExampleMod` (一定要和`SubModule.xml`中的`Id`保持一致)
+
+3. 在Mod文件夹下创建`/bin/Win64_Shipping_Client`文件夹
+
+4. 在Mod文件夹下创建一个 `SubModule.xml` 文件 (必须是这个名字) 
 
    ```xml
     <Module>
@@ -33,6 +36,7 @@ The following guide will walk you through step-by-step on how to create a basic 
             <SubModule>
                 <Name value="ExampleMod"/>
                 <DLLName value="ExampleMod.dll"/>
+                <!-- MySubModule 是将要在教程编程章节创建的类名称 -->
                 <SubModuleClassType value="ExampleMod.MySubModule"/>
                 <Tags>
                     <Tag key="DedicatedServerType" value="none" />
@@ -44,12 +48,11 @@ The following guide will walk you through step-by-step on how to create a basic 
     </Module>
    ```
 
-    **Note**: `MySubModule` is the name of the class we will be using in the [Programming](#programming) section of the tutorial.
+5. 如果您使用其他名称，请更改上述值以匹配您的Module / SubModule的值。
 
-5. If you are using different names, change the above values to match that of your Module/SubModule.
-6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
+6. 启动启动器，并确保您的mod出现 `Singleplayer` &gt; `Mods`中。
 
-For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
+[有关Mod结构的更多信息](../_intro/folder-structure.md).
 
 ### Setting up your Project
 

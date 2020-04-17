@@ -1,16 +1,16 @@
-# Bannerlord Documentation
+# Bannerlord 文档
 
-## Introduction to Modding
+## 制作MOD指引
 
-* [Getting Started](_intro/getting-started.md)
-* [Folder Structure](_intro/folder-structure.md)
-* [Advanced](_intro/advanced.md)
+* [入门](_intro/getting-started.md)
+* [文件结构](_intro/folder-structure.md)
+* [高阶](_intro/advanced.md)
 
-## Tutorials
+## 教程
 
-* [Basic C\# Mod](_tutorials/basic-csharp-mod.md) \(Requires a basic understanding of C\#\)
-* [Modding Gauntlet UIs Without C#](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
-* [Packing your mods for Vortex](_tutorials/packing_mods_for_vortex.md) \(Easy\)
+* [通过 C\# 制作Mod](_tutorials/basic-csharp-mod.md) \(需要了解简单的编程知识，最要对C#有一定的认识)
+* [不需要编程的方式下Modding装备](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
+* [打包MOD](_tutorials/packing_mods_for_vortex.md) \(Easy\)
 
 ## [C# API Documentation](_csharp-api/)
 

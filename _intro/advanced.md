@@ -1,10 +1,10 @@
-# Advanced
+# 高阶
 
 ## [Harmony](https://github.com/pardeike/Harmony)
 
-Harmony is a popular library used in modding for several other games. It can be used to alter functionality of applications and DLLs during runtime \(these changes are not permanent and are only valid for the current session\).
+Harmony是一个流行的库，用于其他一些游戏的modding。它可用于在运行时更改应用程序和dll的功能（这些更改不是永久性的，仅对当前打开的游戏有效）。
 
-_Note that this may cause incompatibilities between mods if they try to patch the same method\(s\), so it should only be used when absolutely needed._
+_请注意，如果mods尝试修补相同的方法，这可能会导致mods之间的不兼容，因此只能在必要时使用._
 
-A common use of this library might be to execute code before/after a particular method \(prefix/postfix\). However, it can also be used to replace an entire method with your own method or to patch individual IL instructions \(be careful with this\).
+此库的一个常见用法是在特定方法`之前/之后`执行代码。但是，它也可以用来用您自己的方法替换整个方法，或者修补个别的IL指令（注意这个）。 
 

@@ -1,13 +1,13 @@
-# Table of contents
+# 内容导航
 
-* [Bannerlord Documentation](README.md)
-* [Introduction](_intro/README.md)
-  * [Getting Started](_intro/getting-started.md)
-  * [Folder Structure](_intro/folder-structure.md)
-  * [Advanced](_intro/advanced.md)
-* [Tutorials](_tutorials/README.md)
-  * [Basic C\# Mod](_tutorials/basic-csharp-mod.md)
-* [General Documentation](_csharp_api/README.md)
+* [Bannerlord 文档](README.md)
+* [简介](_intro/README.md)
+  * [入门](_intro/getting-started.md)
+  * [文件夹结构](_intro/folder-structure.md)
+  * [高级应用](_intro/advanced.md)
+* [教程](_tutorials/README.md)
+  * [很简单的 C\# 语言编写的MOD](_tutorials/basic-csharp-mod.md)
+* [文档](_csharp_api/README.md)
   * [Agent](_csharp_api/mountandblade/agent.md)
   * [BasicCharacterObject](_csharp_api/core/basiccharacterobject.md)
   * [GameEntity](_csharp_api/engine/gameentity.md)
