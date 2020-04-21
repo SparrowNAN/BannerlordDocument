@@ -54,15 +54,40 @@
 
 [有关Mod结构的更多信息](../_intro/folder-structure.md).
 
-### Setting up your Project
+### 搭建开发环境
+1. 下载[Visual Studio 2019社区版](https://visualstudio.microsoft.com/zh-hans/downloads/)
+2. 点击安装，安装过程中需要选择我们开发需要的组件，不要使用默认的，默认的有`20多G`。选择如图中的工作负载和单个组件。
 
-Before setting up a project, it is important to know that **this is not required for basic mods** \(e.g. changing or adding items/characters/scenes\).
+   ![ide1](./ide_image/sdk1.png)
+   ![ide2](./ide_image/sdk2.png)
 
-1. Start Microsoft Visual Studio and select `Create New Project`.
-2. Choose `Class Library (.NET Framework)`.
-3. Name your project `ExampleMod` (if you choose another name make sure that your namespace and assembly name are correct) `.NET Framework 4.7.2` as the `Framework`.  If this option is not available for you, [Download it here](https://dotnet.microsoft.com/download/dotnet-framework/net472) \(Developer Pack\).
-4. Now that your project is setup, [set your build path](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019) to the `Modules/ExampleMod/bin/Win64_Shipping_Client` directory in your game files.
-5. [Reference](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019) the `TaleWorlds.*` DLLs in the `bin\Win64_Shipping_Client` directory of your game files \(not your module directory\). Also reference the `TaleWorlds.*` DLLs for each official module in `Modules\ModuleName\bin\Win64_Shipping_Client`.
+注：单个组件别动其它默认加载的组件，只需要勾选我们需要的`.NET`相关的开发包就可以了。其中有些是不需要安装的，这里没有尝试最小化安装。安装下来也就5G左右吧。
+
+3. 创建新工程
+> 等待安装完毕，打开IDE（刚才打开的是安装器，如果之后需要修改安装的包，可以去里面添加/修改），创建一个.NET库的新工程
+![create_project](./ide_image/create_project.png)
+
+4. 选择创建一个.NET Framework的工程，官方推荐使用`.NET Framework 4.7.2`，现在IDE默认就是使用`.NET Framework 4.7.2`
+
+   ![project_select](./ide_image/select_project_type.png)
+   ![project_select2](./ide_image/select_project_type_2.png)
+
+5. 引入骑砍相关依赖包
+> 我们开发其实就是调用一些官方/个人提供的一些函数/方法，这些函数就是游戏中的行为，所以我们要在项目中引入官方的`*.DLL`文件。在`游戏目录/bin/Win64_Shipping_Client/`里面。
+   ![import](./ide_image/import.png)
+6. 编写相关代码
+> 此处略过，之后会一直翻译这个中文文档，会放在一个网站上，供大家查找，下面给出一个官方的教程的示例。
+[官方教程实现源码](https://gitee.com/wang_ya_nan/BannerlordMods/tree/master/ExampleMod/Source)
+
+7. 导出文件
+   ![dll1](./ide_image/dll.png)
+   ![dll2](./ide_image/dll2.png)
+
+8. 将生产的文件放到我们自己Mod文件夹下创建的`/bin/Win64_Shipping_Client`文件夹中
+   ![dll_copy](./ide_image/dll_copy.png)
+
+[如何设置生产路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)
+[如何添加引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019)
 
 ### Debugging your Project (Optional)
 
