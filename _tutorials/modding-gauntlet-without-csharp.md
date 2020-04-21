@@ -1,23 +1,27 @@
-# Modding Gauntlet Without C#
+# Modding Gauntlet UI
 
-## Important
-### You Can **NOT** Use Depended Modules For This Tutorial. It Shouldn't Cause Any Issues Though.
+## 重要
+### 在本教程中可以不依赖任何模块。
 
-## Introduction
+## 简介
 
-The following guide will walk you through step-by-step on how to create a mod that can overwrite any Gauntlet UI without using any C#. For this example, we will be overriding the Quests UI with some custom title text.
+以下指南将逐步指导您如何创建一个无需使用任何C＃即可覆盖任何Gauntlet UI的mod。对于此示例，我们将使用一些自定义标题文本覆盖Quests UI。
 
-## Preparation
+## 准备
 
-#### For this tutorial, we will be naming our project `ExampleUIMod`.
+#### 我们将把教程创建的Mod命名为 `ExampleUIMod`.
 
-### Setting up your Module \(SubModule.xml\)
+### 设置你的模块 \(SubModule.xml\)
 
-1. Go to your game files and locate the `Modules` directory.
-2. Create a new folder and name it `ExampleUIMod` (Must be the same as the Id you use for Step #5).
-3. Create a new folder named `GUI` and open it.
-4. Now create a new folder in your `GUI` directory called `Prefabs`. We will come back to this folder later in the tutorial.
-5. Go back to the module folder you created in Step #2 and create a new `SubModule.xml` file and then paste the following into it:
+1. 定位到你游戏文件的`Modules`目录
+
+2. 创建 `ExampleUIMod` 文件夹(必须和第五步中的ID一致).
+
+3. 在`ExampleUIMod`下建一个`GUI`目录
+
+4. 在`GUI `目录下创建一个`Prefabs`文件夹（`/ExampleUIMod/GUI/Prefabs/`）
+
+5. 回到`ExampleUIMod`目录下创建`SubModule.xml`文件
 
     ```xml
     <Module>
@@ -32,33 +36,31 @@ The following guide will walk you through step-by-step on how to create a mod th
     </Module>
     ```
 
-6. Start the launcher and make sure your mod appears under `Singleplayer` &gt; `Mods`.
+6. 开始游戏，查看启动器的 `Singleplayer` &gt; `Mods`下是否有`ExampleUIMod`
 
-For more information on the Module folder structure, [Click Here](../_intro/folder-structure.md).
+## 重写一个 Gauntlet UI
 
-## Overriding a Gauntlet UI
+Tips：你可以重写任何的`Gauntlet UI`。这这个教程汇总，我们将重写`Quests UI`（任务UI）
 
-Note: You can override any Gauntlet UI. However, for this tutorial, we will only be overriding the Quests UI.
+1. 进入 `Modules\SandBox\GUI\Prefabs\QuestsScreen` ，复制 `QuestsScreen.xml`文件
+2. 进入 `Prefabs` 文件夹（上面第4步创建的），把`QuestsScreen.xml`文件复制到这里
+3. 使用文本编辑器打开文件，不要使用记事本，使用`VS code`之类的文本编辑器
+4. 查找 `Text="@QuestTitleText"` 
+5. 替换 `@QuestTitleText` (也包括@符号) 为你想要的任何文本
+6. 保存文件
+7. 打开游戏加载器 `Singleplayer` &gt; `Mods` ，确认勾选你的Mod，启动游戏
+8. 打开任务UI界面，你应该就可以看到你输入的文本在顶部中间显示了
+9. 恭喜，创建了第一个`Bannerlord Gauntlet mod`!!!
 
-1. Go to `Modules\SandBox\GUI\Prefabs\QuestsScreen` and copy the `QuestsScreen.xml` file to your clipboard
-2. Go to the `Prefabs` folder you created in Step 4 of `Setting up your Module` and paste the `QuestsScreen.xml` from your clipboard.
-3. Open the pasted file in a text editor.
-4. Search (Ctrl+F) for a `Text="@QuestTitleText"` and go to this section of the file.
-5. Replace `@QuestTitleText` (including @ symbol) with the text you want the title to be.
-6. Save the file.
-7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game and load any save.
-8. Open the Quests UI and you should see the text you added in the top middle of the screen.
-9. You have now successfully created your first Bannerlord Gauntlet mod!
+##  如何启用和使用实时UI编辑
 
-## How To Enable & Use Live UI Editing
+游戏中，实时编辑UI，会让创作更加容易，但是仅仅依靠游戏本体是无法实现的。
 
-Live UI editting is a feature in the game that will make your life **a lot** easier. Unfortunately though, it isn't something you can enable with just the base game.
+要启用实时编辑，需要下载 [DeveloperConsole Mod](https://www.nexusmods.com/mountandblade2bannerlord/mods/4).
 
-To enable it, you will need to [download the DeveloperConsole Mod](https://www.nexusmods.com/mountandblade2bannerlord/mods/4).
+下载并安装了Developer Console Mod后，请按照以下步骤为游戏会话启用实时编辑。
 
-Once you have downloaded & installed the Developer Console Mod, follow the steps below to enable live editing for your game session.
-
-1. Open the game launcher and then make sure `Developer Console` is ticked in `Singleplayer` &gt; `Mods` along with your Gauntlet UI mod.
-2. The Developer Console mod uses the shortcut `CTRL` + `~` (tilde) to enable the console. If this shortcut doesn't work for you, try pressing CTRL and then the key on your keyboard above Tab and below Esc.
-3. Now that you can see the console, you will want to type the command `ui.toggle_debug_mode` to enable the live UI editing feature.
-4. Any changes you make to your UIs should now update automatically in-game.
+1. 打开加载器，确保 `Developer Console` ，和你的`UI Mod`都被勾选
+2. `Developer Console`使用快捷键`CTRL`+ `~`（波浪号）启用控制台。如果此快捷方式对您不起作用，请尝试按CTRL，然后按键盘上Tab上方和Esc下方的键
+3. 现在您可以看到控制台，您将需要键入命令`ui.toggle_debug_mode`以启用实时UI编辑功能
+4. 您对UI所做的任何更改现在都应该在游戏中自动更新

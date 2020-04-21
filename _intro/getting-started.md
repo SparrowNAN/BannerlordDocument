@@ -31,9 +31,3 @@ Bannerlord的MOD系统是基于模块的，所以制作MOD会比之前的系列�
 2. 在`Modules`文件夹下面创建一个新的文件夹，文件夹的名称必须是你MOD的名称（MOD的名称会在`SubModule.xml`中定义）。
 2. 在文件夹中创建`SubModule.xml` 文件。 你可以 [查看一个简单版本](../_xmldocs/submodule.md) 或者 [查看SubModule.xml的详细文档](../_xmldocs/submodule.md)
 
-## Next Steps
-
-- Refer to the [Folder Structure](folder-structure.md) page for additional information on what additional directories to add depending on the intended content of your mod.
-- Refer to the [Basic C# Mod](../_tutorials/basic-csharp-mod.md) page for an example of how to set up, build and run code in Bannerlord.
-- Refer to the [Modding Gauntlet UIs Without C#](../_tutorials/modding-gauntlet-without-csharp.md) page for information on how to mod Gauntlet UIs without using any C#.
-

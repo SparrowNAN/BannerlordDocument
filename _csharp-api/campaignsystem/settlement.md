@@ -1,4 +1,4 @@
-# Settlement
+# 定居点
 
 Settlements are villages, castles, or towns on the campaign map.
 

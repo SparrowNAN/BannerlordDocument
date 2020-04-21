@@ -89,7 +89,7 @@
 [如何设置生产路径](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2019)
 [如何添加引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2019)
 
-### Debugging your Project (Optional)
+###  调试项目 (Optional)
 
 #### Way 1 (Preferred)
 1. Open your project properties and go to the `Debug` tab.
@@ -102,32 +102,4 @@
 1. Open your project properties and go to the `Debug` tab.
 2. Select the `Start external program` option and then browse for `TaleWorlds.MountAndBlade.Launcher.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
-
-## Programming
-
-1. Create a new class in your VS Project and name it `MySubModule`, then open it.
-2. Add the following using directives to your class:
-
-   ```csharp
-    using TaleWorlds.Core;
-    using TaleWorlds.Localization;
-    using TaleWorlds.MountAndBlade;
-   ```
-
-3. Inherit from the `MBSubModuleBase` class.
-4. Setup an override for the `OnSubModuleLoad()` inherited method.
-5. Add the following code to your override method:
-
-   ```csharp
-    Module.CurrentModule.AddInitialStateOption(new InitialStateOption("Message",
-        new TextObject("Message", null),
-        9990,
-        () => { InformationManager.DisplayMessage(new InformationMessage("Hello World!")); },
-        false));
-   ```
-
-6. Compile your project and confirm that it was outputted to `Modules\ExampleMod\bin\Win64_Shipping_Client`.
-7. Open the Bannerlord launcher and navigate to `Singleplayer` &gt; `Mods` then make sure that your mod is ticked and start the game.
-8. On the title screen, you should now see a button called `Message`, click it and you should see `Hello World` displayed in the bottom-left corner of your screen \(in chat\).
-9. You have now successfully created your first Bannerlord mod!
 

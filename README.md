@@ -9,8 +9,8 @@
 ## 教程
 
 * [通过 C\# 制作Mod](_tutorials/basic-csharp-mod.md) \(需要了解简单的编程知识，最要对C#有一定的认识)
-* [不需要编程的方式下Modding装备](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
-* [打包MOD](_tutorials/packing_mods_for_vortex.md) \(Easy\)
+* [Modding Gauntlet UI](_tutorials/modding-gauntlet-without-csharp.md) \(Easy\)
+* [为Vortex打包您的mod](_tutorials/packing_mods_for_vortex.md) \(Easy\)
 
 ## [C# API Documentation](_csharp-api/)
 

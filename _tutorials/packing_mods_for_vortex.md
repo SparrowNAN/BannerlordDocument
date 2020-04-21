@@ -1,4 +1,5 @@
-# Packing your mods for Vortex
+# 为Vortex打包您的mod
+
 
 ## Introduction
 Vortex is the powerful, open source mod manager by Nexus Mods. It supports installing and managing mods for 100+ games, including Mount & Blade 2: Bannerlord. When sharing you mod, there are few considerations you should make to ensure that it is structure in a way that is compatible with Vortex. [You can learn more about Vortex here](https://nexusmods.com/about/vortex).
