@@ -48,7 +48,7 @@ Tips：你可以重写任何的`Gauntlet UI`。这这个教程汇总，我们将
 4. 查找 `Text="@QuestTitleText"` 
 5. 替换 `@QuestTitleText` (也包括@符号) 为你想要的任何文本
 6. 保存文件
-7. 打开游戏加载器 `Singleplayer` &gt; `Mods` ，确认勾选你的Mod，启动游戏
+7. 打开游戏加载器 `Singleplayer` &gt; `Mods` ，确认勾选你的Mod，启动游戏（所选MOD的位置要在SanBox上面）
 8. 打开任务UI界面，你应该就可以看到你输入的文本在顶部中间显示了
 9. 恭喜，创建了第一个`Bannerlord Gauntlet mod`!!!
 

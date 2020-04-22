@@ -3,7 +3,7 @@
 * [Bannerlord 文档](README.md)
 * [简介](_intro/README.md)
   * [入门](_intro/getting-started.md)
-  * [文件结构](_intro/folder-structure.md)
+  * [Mod文件结构](_intro/folder-structure.md)
   * [高阶](_intro/advanced.md)
 * [教程](_tutorials/README.md)
   * [基础的基于 C\# 的Mod](_tutorials/basic-csharp-mod.md)
