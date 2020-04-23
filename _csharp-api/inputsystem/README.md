@@ -1,1 +1,3 @@
-# Input System
+# 输入系统
+
+[Input](./input.md)
