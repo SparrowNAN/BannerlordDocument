@@ -1,7 +1,7 @@
 # CampaignGameStarter
 This class can be used to introduce behaviours, dialog, menus and models for campaigns, and implements the IGameStarter interface. This is useful in the `OnGameStart` method in [MBSubModuleBase](mbsubmodulebase.md), which is shown in the example.
 
-这个类可以被用来为战役提供自定义的弹框，对话框，菜单和模型，并且可以实现`IGameStarter`接口。可以在[MBSubModuleBase](mbsubmodulebase.md)的`OnGameStart`方法中使用。
+这个类可以被用来为战役提供自定义的弹框，对话框，菜单和Mod，并且可以实现`IGameStarter`接口。可以在[MBSubModuleBase](mbsubmodulebase.md)的`OnGameStart`方法中使用。
 
 ## Accessible Methods:
 #### `public void ClearEmptyObjects()`
@@ -28,7 +28,7 @@ See [GameMenu](gamemenu.md) for use.
 #### `public ICollection<CampaignBehaviourBase> CampaignBehaviors`
 当前战役注册的 [Campaign Behaviours](campaignbehaviorbase.md).
 #### `public IEnumerable<GameModel> Models`
-当前已注册的 [Game Models](../core/gamemodel.md)
+当前已注册的 [Mod](../core/gamemodel.md)
 
 ## 举例:
 ```csharp

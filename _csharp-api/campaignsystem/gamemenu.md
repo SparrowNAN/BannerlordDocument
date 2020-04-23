@@ -1,7 +1,5 @@
 # GameMenu - 游戏菜单
 
-All the menus in the campaign are handled by the `GameMenuManager`. To add new menus however you must use the provided methods by the `Campaign` class.
-
 战役中所有的`menus`都被`GameMenuManager`管理着。但是如果要添加新菜单，必须使用`Campaign`该类提供的方法。
 
 添加一个新的`menu`:
@@ -29,7 +27,7 @@ void OnConsequenceDelegate(MenuCallbackArgs args);
   - 启用/禁用选项（通过其返回值）
   - 设置图标（通过提供的参数）
 
-The icon can be changed by setting `optionLeaveType` to something appropriate. The used images are found under `Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu` and the correspondence can be viewed in `Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`. This can of course be overrides in your own module, but additional `LeaveTypes` are not possible.
+可以通过将其设置`optionLeaveType`为适当的值来更改图标。使用的图像位于下，`Mount & Blade II Bannerlord\GUI\GauntletUI\SpriteParts\ui_group1\GameMenu`并且可以在中查看对应关系`Mount & Blade II Bannerlord\Modules\Native\GUI\Brushes\GameMenu.xml`。当然，可以在您自己的模块中覆盖它，但`LeaveTypes`不能进行其他操作。
 
 | Type                | Image |
 | ------------------- | ----- |
