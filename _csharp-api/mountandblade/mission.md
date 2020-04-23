@@ -1,10 +1,12 @@
 # Mission
 
-You can think of Missions as GameModes\(Battles/TeamDeathMatch\) etc. Missions are instantiated with a [Scene](../engine/scene.md), [MissionViews](missionbehaviour/missionview.md), and [MissionBehaviours](missionbehaviour/README.md).
+可以将`Mission` 当作 GameModes\(Battles/TeamDeathMatch\) etc.  ？？？ //TODO optimization
 
-More information on missions will be available once we gain access to the `CampaignSystem` DLLs.
+`Missions`会随着 [Scene](../engine/scene.md), [MissionViews](missionbehaviour/missionview.md), and [MissionBehaviours](missionbehaviour/README.md) 进行初始化。
+
+一旦获得`CampaignSystem`DLL的访问权限，即可获得有关`Mission`的更多信息。
 
 ## Tips
 
-* You can get the current mission instance \(if any\) by using `Mission.Current` property.
+* 您可以使用`Mission.Current`属性获取当前任务实例（如果有）。
 

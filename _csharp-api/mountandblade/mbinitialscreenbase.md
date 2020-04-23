@@ -1,8 +1,8 @@
 # MBInitialScreenBase
 
-You can create a custom title screen by inheriting from MBInitialScreenBase and then applying the GameStateScreen attribute to your class.
+您可以通过继承`MBInitialScreenBase`来创建自定义的过场动画，然后将GameStateScreen属性应用于您的类。
 
-Here is a skeleton of what your inherited class should look like:
+这是你实现`MBInitialScreenBase`类的基本骨架:
 
 ```csharp
 [GameStateScreen(typeof(InitialState))]
@@ -28,5 +28,4 @@ public class MyInitialScreen : MBInitialScreenBase
 }
 ```
 
-Replace the string `InitialScreen` with the name of your [Movie](../../_gauntlet/movie.md)'s XML file.
-
+将字符串替换为[Movie](https://docs.bannerlordmodding.com/_gauntlet/movie.html)的XML文件`InitialScreen`的名称。
