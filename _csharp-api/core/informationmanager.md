@@ -1,14 +1,14 @@
 # InformationManager
 
-The information manager is a high-level way to print text to the chat log \(e.g. damage\) or to display an inquiry to the player \(e.g. yes/no confirmation\).
+`InformationManager`是一种将文本打印到聊天记录（例如上海）或向玩家显示询问（例如是/否确认）的高级方式。
 
-## Outputting to Chat Log
+## 输出到聊天记录
 
 ```csharp
 InformationManager.DisplayMessage()
 ```
 
-## Displaying an Inquiry
+## 输出一个询问
 
 ```csharp
 InformationManager.ShowInquiry()
