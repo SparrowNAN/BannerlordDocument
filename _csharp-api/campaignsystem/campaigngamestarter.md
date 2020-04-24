@@ -1,6 +1,4 @@
 # CampaignGameStarter
-This class can be used to introduce behaviours, dialog, menus and models for campaigns, and implements the IGameStarter interface. This is useful in the `OnGameStart` method in [MBSubModuleBase](mbsubmodulebase.md), which is shown in the example.
-
 这个类可以被用来为战役提供自定义的弹框，对话框，菜单和Mod，并且可以实现`IGameStarter`接口。可以在[MBSubModuleBase](mbsubmodulebase.md)的`OnGameStart`方法中使用。
 
 ## Accessible Methods:
@@ -9,7 +7,7 @@ This class can be used to introduce behaviours, dialog, menus and models for cam
 #### `public void AddBehavior(CampaignBehaviorBase campaignBehavior)`
 把 [Campaign Behavior](campaignbehaviorbase.md) 添加到当前战役
 #### `public void AddModel(GameModel model)`
-把 [Game Model](../core/gamemodel.md) 添加到当前战役
+把 [Game Model](../core/gamemodel.md) 添加到当前战役（比如经济/金融模型）
 #### `public void LoadGameTexts(string xmlPath)`
 (Work in progress) 在输入的路径中加载XML文件，从而向游戏中引入更多文本。这些文本的格式与*comment_strings.xml*文件的格式相同，其用途目前尚未确定。
 #### `public void LoadGameMenus(Type typeOfGameMenusCallbacks, string xmlPath)`
