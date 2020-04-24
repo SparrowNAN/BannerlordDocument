@@ -21,6 +21,7 @@ TaleWorlds.CampaignSystem.CampaignGameStarter.CampaignGameStarter
 
 9. TaleWorlds.CampaignSystem.SandBox.SandBoxManager.OnGameStart 是在这个方法中，加载了经济模型
 
+
 OnSettlementOwnerChanged //定居点发生变化的事件
 
 OnBeforeSave
@@ -30,3 +31,4 @@ OnBeforeSave
 
 public abstract class SettlementProsperityModel : GameModel
 // 找到了计算增加health的方法
+

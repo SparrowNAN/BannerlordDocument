@@ -1,8 +1,8 @@
 # ScreenBase
 
-You can organize and instantiate your [ViewModels](viewmodel.md) and [Movies](movie.md) by using screens.
+你可以使用`screens`来组织和实例化 [ViewModels](viewmodel.md) 和 [Movies](movie.md) 。
 
-In order to prevent any issues, it is recommended that you use the template below when creating your screens.
+为了防止出现任何问题，建议您在创建`screen`时使用以下模板。
 
 ```csharp
 public class MyExampleScreen : ScreenBase
@@ -50,7 +50,7 @@ public class MyExampleScreen : ScreenBase
 
 ## Pushing your Screen
 
-To push your screen onto the screen stack, you can do following:
+要将屏幕推到屏幕堆栈上，可以执行以下操作：
 
 ```csharp
 ScreenManager.PushScreen(ViewCreatorManager.CreateScreenView<MyExampleScreen>());
