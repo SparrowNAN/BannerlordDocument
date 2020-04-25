@@ -32,3 +32,8 @@ OnBeforeSave
 public abstract class SettlementProsperityModel : GameModel
 // 找到了计算增加health的方法
 
+
+10. 查到了DefaultSettlementProsperityModel : SettlementProsperityModel类
+
+
+11. this._dataSource = new ClanVM(new Action(this.CloseClanScreen), new Action<MobileParty>(this.OpenPartyAsManage), new Action(this.OpenBannerEd
