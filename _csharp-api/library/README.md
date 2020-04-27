@@ -1,3 +1,2 @@
 # Library
-
-* [ModuleInfo](./moduleinfo.md)
+)
