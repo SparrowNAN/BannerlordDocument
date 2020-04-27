@@ -2,7 +2,7 @@
 
 > MOD效果：降低村庄的赋税，提升人口增长。AI的村庄都会有效果。
 
-## 效果
+## 效果说明
 
 |当前人口|减免赋税比率|人口增长倍率|
 |--|--|--|
@@ -17,6 +17,14 @@
 ## 后续MOD更新计划
 
 > 支持用户在 家族 -> 封地 界面选择村庄自定义赋税减免比率
+> 支持调节AI的赋税减免/人口增长比率
+
+> 其它：会在中文文档中更新相关的API说明
 
 ## MOD下载地址
-正在上传
+
+[VillageRateMOD](https://gitee.com/wang_ya_nan/Bannerlord/releases/v0.1-village.rate)
+
+## MOD源码地址
+
+[Gitee地址](https://gitee.com/wang_ya_nan/BannerlordMods/tree/master/VillageTaxRateMod/Source/VillageTaxRateMod)
