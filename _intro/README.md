@@ -1,5 +1,3 @@
 # 简介
 
-  * [入门](./getting-started.md)
-  * [Mod文件结构](./folder-structure.md)
-  * [高阶](./advanced.md)
+> 介绍MOD开发前的准备，MOD基础结构，以及打包方式，高级应用
