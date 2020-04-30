@@ -18,7 +18,50 @@
       //   '/.*/_sidebar.md': '/_sidebar.md'
       // },
       name: 'Bannerlord中文文档',
-      repo: 'https://gitee.com/wang_ya_nan/Bannerlord'
+      repo: 'https://gitee.com/wang_ya_nan/Bannerlord',
+
+      // 全文搜索
+      search: 'auto', // default
+
+      search: [
+        '/',            // => /README.md
+        '/guide',       // => /guide.md
+        '/get-started', // => /get-started.md
+        '/zh-cn/',      // => /zh-cn/README.md
+        '/_sidebar'
+      ],
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto', // or 'auto'
+        placeholder: '搜索',
+
+        // Localization
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': '搜索'
+        },
+
+        noData: 'No Results!',
+
+        // Localization
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': '找不到结果'
+        },
+
+        // Headline depth, 1 - 6
+        depth: 2,
+
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        namespace: 'bannerlord'
+
+      }
+
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
