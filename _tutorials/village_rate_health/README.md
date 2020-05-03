@@ -61,7 +61,7 @@
 
 ## MOD下载地址
 
-[VillageRateMOD](https://gitee.com/wang_ya_nan/Bannerlord/releases/v0.1-village.rate)
+[VillageRateMOD](https://gitee.com/wang_ya_nan/Bannerlord/releases/)
 
 ## MOD源码地址
 
