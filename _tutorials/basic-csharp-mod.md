@@ -91,7 +91,7 @@
 
 ###  调试项目 (Optional)
 
-#### Way 1 (Preferred)
+#### 方法一(Rider IDE)
 1. Open your project properties and go to the `Debug` tab.
 2. Select the `Start external program` option and then browse for `Bannerlord.exe` located in the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).
 3. Set your working directory to the `bin\Win64_Shipping_Client` directory in your game files \(not your module directory\).

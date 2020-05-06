@@ -1,5 +1,6 @@
-## Defining custom data
-Because the game can't differentiate between it's 'built-int' datas defined in core modules and custom modules, when such custom modules are removed, the game won't load the save file without them.  
-While it is expected, not every module introduces permanent changes to the save file that could render it unplayable.  
- 
-A valid workaround for now would be when defining a custom SaveableTypeDefiner for classes and structures to use a high enough range of numbers that the game doesn't use and when defining custom xml data to use 'custom_MODNAME_' prefix for Id's. This way it would be easier to detect custom data and remove it from game's internal storage in the future.
+## 使用自定义数据 - Defining custom data
+因为游戏无法区分核心模块和自定义模块中定义的“内置”数据，当自定义的MOD移除时，游戏就不会加载这些自定义MOD保存的文件。
+
+可以预料的是，并非每个模块都会对存档文件进行永久更改，从而使该文件无法使用。
+
+目前有效的解决方法是，为类和结构定义自定义`SaveableTypeDefiner`，以使用游戏核心MOD不使用的足够大的数字(`ID`)，以及在为`ID`自定义xml数据时使用“custom_MODNAME_”前缀。 这样，将来可以更轻松地检测自定义数据并将其从游戏的内部存储中删除。

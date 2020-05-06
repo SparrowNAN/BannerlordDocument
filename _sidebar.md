@@ -7,6 +7,7 @@
   * [基于c#的MOD开发](./_tutorials/basic-csharp-mod.md) 
   * [简单的修改UI操作](./_tutorials/modding-gauntlet-without-csharp.md) 
   * [村庄减税MOD](./_tutorials/village_rate_health/)
+    * [MOD包含的元素](./_tutorials/village_rate_health/struct.md) 
   * [将MOD打包发不到Vortex](./_tutorials/packing_mods_for_vortex.md)
   * [CampginSystem - 战役系统](./_csharp-api/campaignsystem/)
     * [Hero](./_csharp-api/campaignsystem/hero.md)
