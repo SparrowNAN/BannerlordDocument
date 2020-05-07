@@ -1,28 +1,24 @@
 # 为Vortex打包您的mod
 
 
-## Introduction
-Vortex is the powerful, open source mod manager by Nexus Mods. It supports installing and managing mods for 100+ games, including Mount & Blade 2: Bannerlord. When sharing you mod, there are few considerations you should make to ensure that it is structure in a way that is compatible with Vortex. [You can learn more about Vortex here](https://nexusmods.com/about/vortex).
+## 简介
+
+[Vortex](https://www.nexusmods.com/about/vortex/)是Nexus Mods强大的开源Mod管理器。它支持安装和管理适用于100多种游戏的mod，包括Mount＆Blade 2：Bannerlord。共享您的mod时，应注意几个事项，以确保其结构与Vortex兼容。
 
 
-## Modules
-Modules are detected automatically, they are characterised by mods that are intended to be self contained in the "Modules" folder and include a Submodule.xml file. Vortex grabs the entire folder containing the Submodule.xml and places it into the "Modules" folder of the game. 
+## MOD
 
-Don't forget to enable these mods in the launcher when starting the game!
+MOD是自动检测的，它们的特征在于包含在“Modules”文件夹中，并且包含Submodule.xml文件。Vortex抓取了包含Submodule.xml的整个文件夹，并将其放入游戏的“Modules”文件夹中。
 
-
-## XML Edits and other Mods
-
-Any other type of mod currently requires you to simply pack it relative to the game base folder. For example, if I have the file "BannerEditor.xml" which needs to go into the "Modules\Native\GUI\Prefabs\Bannereditor" folder, I'll need to add those folders above my file in the archive that I upload. 
-
-This will allow anything including XML edits, video/sound edits and Reshade presets to be installed correctly and consistently. 
+开始游戏时，请不要忘记在启动器中启用这些mod！
 
 
-## Mods with multiple options
+## XML编辑
 
-Vortex supports [mod installers](https://wiki.nexusmods.com/index.php/How_to_create_mod_installers) which allow you offer users a single download containing a choice of options in your mod. Mod installers can be written in XML or created with the [FOMOD Creation Tool](https://www.nexusmods.com/fallout4/mods/6821/?tab=files). If you would like to use a mod installer but are having difficulty getting set up, please reach out to the Nexus Mods Community Managers and we'll be happy to assist you.
+当前，任何其他类型的Mod都需要您相对于游戏库文件夹进行简单打包。例如，如果我有文件`BannerEditor.xml`需要进入`Modules \ Native \ GUI \ Prefabs \ Bannereditor`文件夹，则需要在上传的文件上包含这些文件夹的路径`GUI \ Prefabs \ Bannereditor`。
 
+这将允许正确且一致地安装包括XML编辑，视频/声音编辑和Reshade预设在内的所有内容。
 
-## Incompatible mods
+## 使用工具创建可上传的Vortex MOD
 
-At time of writing, we are not aware of any kind of mod that isn't compatible with Vortex (when packed correctly). However, if you are uploading a tool or savegame that should *not* be installed this way, you can disable the Vortex button on the Nexus Mods page.
+[FOMOD Creation Tool](https://www.nexusmods.com/fallout4/mods/6821/?tab=files)
