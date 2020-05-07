@@ -1,6 +1,6 @@
 # （中世纪的）比赛 - TournamentGame
 
-此类用于处理比赛的参与者和固有设置|要修改某些行为，可能需要一个`Harmony补丁`|
+此类用于处理比赛的参与者和固有设置，要修改某些行为，可能需要一个`Harmony补丁`
 
 注意：此页面不完整，因此，如果您发现有关此主题的更多信息，请创建请求请求并添加到此不断增长的Modding文档中！
 
@@ -8,7 +8,7 @@
 
 > `protected TournamentGame(Town town, ItemObject prize = null)`
 
-在`AddTournament`和`CreateTournament`方法之后被调用的内部方法，用来设置奖品|
+在`AddTournament`和`CreateTournament`方法之后被调用的内部方法，用来设置奖品
 
 ## 可访问的属性
 
