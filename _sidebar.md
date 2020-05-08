@@ -6,6 +6,7 @@
 * [教程](./_tutorials/)
   * [基于c#的MOD开发](./_tutorials/basic-csharp-mod.md) 
   * [简单的修改UI操作](./_tutorials/modding-gauntlet-without-csharp.md) 
+  * [创建新的定居点](./_tutorials/new_settlements.md) 
   * [村庄减税MOD](./_tutorials/village_rate_health/)
     * [MOD包含的元素](./_tutorials/village_rate_health/struct.md) 
   * [将MOD打包发布到Vortex](./_tutorials/packing_mods_for_vortex.md)
