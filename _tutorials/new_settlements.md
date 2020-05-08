@@ -35,7 +35,7 @@ Tips: 请不要使用常规的记事本进行XML编辑（对的，说的就是wi
 
 在您的mods`Main_map / scene.xscene`文件中，对`settlements.xml`文件中的每个条目都需要一个`game_entity`，仍然要确保没有重复的ID。
 
->举个🌰 -- [添加一个城镇和两个村庄](https://pastebin.com/BuSbQ6x2) 以及[scene.xscene中添加game_entity](https://pastebin.com/dXcKT7wf)
+>举个🌰 -- [添加一个城镇和两个村庄](https://pastebin.com/BuSbQ6x2) 以及 [scene.xscene中添加game_entity](https://pastebin.com/dXcKT7wf)
 
 3. 其它说明
 
