@@ -1,5 +1,7 @@
 # Mission
 
+> 此处翻译需要推到重来
+
 可以将`Mission` 当作 GameModes\(Battles/TeamDeathMatch\) etc.  ？？？ //TODO optimization
 
 `Missions`会随着 [Scene](../engine/scene.md), [MissionViews](missionbehaviour/missionview.md), and [MissionBehaviours](missionbehaviour/README.md) 进行初始化。
