@@ -22,5 +22,6 @@
     * [TournamentGame - （中世纪）比赛](./_csharp-api/campaignsystem/tournamentgame.md)
   * [Core - 核心内容](./_csharp-api/core/_game_model/)
   * [InputSystem - 输入系统](./_csharp-api/inputsystem/)
+    * [Input - 输入](./_csharp-api/inputsystem/input.md) 
 * [Gaunlet UI](./_gauntlet/)
 * [XML](./_xmldocs/)
