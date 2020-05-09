@@ -1,3 +1,3 @@
-# C# API Documentation
+# C# API 文档
 
-### Note: All Gauntlet related documentation is available [here.](../_gauntlet)
+> 主要针对游戏中类库介绍其具体使用方法，以及功能

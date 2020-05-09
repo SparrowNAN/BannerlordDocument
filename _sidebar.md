@@ -10,6 +10,7 @@
   * [村庄减税MOD](./_tutorials/village_rate_health/)
     * [MOD包含的元素](./_tutorials/village_rate_health/struct.md) 
   * [将MOD打包发布到Vortex](./_tutorials/packing_mods_for_vortex.md)
+* [C# API文档](./_csharp_api/)
   * [CampginSystem - 战役系统](./_csharp-api/campaignsystem/)
     * [Hero](./_csharp-api/campaignsystem/hero.md)
     * [Settlement - 定居点](./_csharp-api/campaignsystem/settlement.md)
