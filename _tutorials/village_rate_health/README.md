@@ -65,5 +65,5 @@
 
 ## MOD源码地址
 
-[Gitee地址](https://gitee.com/wang_ya_nan/BannerlordMods/tree/master/VillageTaxRateMod/Source/VillageTaxRateMod)
+[Github地址](https://github.com/SparrowNAN/BannerlordMods/tree/master/VillageTaxRateMod)
 
