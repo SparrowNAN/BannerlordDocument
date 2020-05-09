@@ -6,4 +6,4 @@
 4. 存档时保存设置的村庄税率
 5. Harmony的在具体方法之前或之后扩展的具体操作
 
-[源码地址](https://gitee.com/wang_ya_nan/BannerlordMods/tree/master/VillageTaxRateMod/Source/VillageTaxRateMod)
+[Github地址](https://github.com/SparrowNAN/BannerlordMods/tree/master/VillageTaxRateMod)

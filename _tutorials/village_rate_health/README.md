@@ -61,7 +61,7 @@
 
 ## MOD下载地址
 
-[VillageRateMOD](https://gitee.com/wang_ya_nan/Bannerlord/releases/)
+[VillageRateMOD](https://github.com/SparrowNAN/BannerlordDocument/releases/tag/VillageRateMod_v2.0.0)
 
 ## MOD源码地址
 
