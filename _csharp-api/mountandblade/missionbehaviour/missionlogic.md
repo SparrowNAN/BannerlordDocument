@@ -1,4 +1,4 @@
-# MissionLogic
+# MissionLogic - 人物逻辑
 MissionLogic is an abstract class that inherits [MissionBehaviour](./). In addition to several additional callbacks, mission logics also have overridable methods that affect the logic of mission.
 
 ## Callbacks
