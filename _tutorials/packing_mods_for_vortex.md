@@ -19,6 +19,8 @@ MOD是自动检测的，它们的特征在于包含在“Modules”文件夹中�
 
 这将允许正确且一致地安装包括XML编辑，视频/声音编辑和Reshade预设在内的所有内容。
 
-## 使用工具创建可上传的Vortex MOD
 
-[FOMOD Creation Tool](https://www.nexusmods.com/fallout4/mods/6821/?tab=files)
+
+## MOD上传
+
+需要注册Vortex账号，之后只需通过网页上传即可，每一步都有相关提示。
